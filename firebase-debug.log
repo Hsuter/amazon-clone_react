@@ -1,0 +1,374 @@
+[debug] [2022-07-19T11:20:32.965Z] ----------------------------------------------------------------------
+[debug] [2022-07-19T11:20:32.968Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LEMONADE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-07-19T11:20:32.969Z] CLI Version:   11.2.1
+[debug] [2022-07-19T11:20:32.969Z] Platform:      win32
+[debug] [2022-07-19T11:20:32.969Z] Node Version:  v18.2.0
+[debug] [2022-07-19T11:20:32.973Z] Time:          Tue Jul 19 2022 14:20:32 GMT+0300 (East Africa Time)
+[debug] [2022-07-19T11:20:32.973Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-19T11:20:33.123Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-19T11:20:33.124Z] > authorizing via signed-in user (harry.suter.hs@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project naxy-brands. This may result in unexpected behavior. 
+[debug] [2022-07-19T11:20:33.501Z] [hub] writing locator at C:\Users\LEMONADE\AppData\Local\Temp\hub-naxy-brands.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-07-19T11:20:33.607Z] defaultcredentials: writing to file C:\Users\LEMONADE\AppData\Roaming\firebase\harry_suter.hs_gmail.com_application_default_credentials.json
+[debug] [2022-07-19T11:20:33.614Z] Setting GAC to C:\Users\LEMONADE\AppData\Roaming\firebase\harry_suter.hs_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\LEMONADE\\AppData\\Roaming\\firebase\\harry_suter.hs_gmail.com_application_default_credentials.json"}}
+[debug] [2022-07-19T11:20:33.617Z] > refreshing access token with scopes: []
+[debug] [2022-07-19T11:20:33.621Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-19T11:20:33.621Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-19T11:20:34.190Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-19T11:20:34.191Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-19T11:20:34.321Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/naxy-brands/adminSdkConfig [none]
+[debug] [2022-07-19T11:20:35.282Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/naxy-brands/adminSdkConfig 200
+[debug] [2022-07-19T11:20:35.282Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/naxy-brands/adminSdkConfig {"projectId":"naxy-brands","storageBucket":"naxy-brands.appspot.com"}
+[debug] [2022-07-19T11:20:35.303Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/naxy-brands/sites 
+[debug] [2022-07-19T11:20:37.343Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/naxy-brands/sites 200
+[debug] [2022-07-19T11:20:37.344Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/naxy-brands/sites {"sites":[{"name":"projects/naxy-brands/sites/naxy-brands","defaultUrl":"https://naxy-brands.web.app","appId":"1:69690084110:web:1549e28273d43b4827655f","type":"DEFAULT_SITE"}]}
+[debug] [2022-07-19T11:20:37.344Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/naxy-brands/webApps/1:69690084110:web:1549e28273d43b4827655f/config [none]
+[debug] [2022-07-19T11:20:38.486Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/naxy-brands/webApps/1:69690084110:web:1549e28273d43b4827655f/config 200
+[debug] [2022-07-19T11:20:38.487Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/naxy-brands/webApps/1:69690084110:web:1549e28273d43b4827655f/config {"projectId":"naxy-brands","appId":"1:69690084110:web:1549e28273d43b4827655f","storageBucket":"naxy-brands.appspot.com","apiKey":"AIzaSyA9fkQBoP6g73k8_PgYmiBiHxPcXPO8ang","authDomain":"naxy-brands.firebaseapp.com","messagingSenderId":"69690084110","measurementId":"G-WGKCQEPNYR"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2022-07-19T11:20:38.609Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-07-19T11:20:38.609Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-07-19T11:20:38.609Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\LEMONADE\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\LEMONADE\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-07-19T11:20:38.960Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
+[info] i  functions: Watching "D:\reactsetup\naxy-brands\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\reactsetup\\naxy-brands\\functions\" for Cloud Functions..."}}
+[debug] [2022-07-19T11:20:39.152Z] Validating nodejs source
+[debug] [2022-07-19T11:20:45.168Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-19T11:20:45.168Z] Building nodejs source
+[debug] [2022-07-19T11:20:45.169Z] Analyzing nodejs backend spec
+[debug] [2022-07-19T11:20:45.170Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-19T11:20:45.689Z] Serving at port 9005
+
+[debug] [2022-07-19T11:20:45.921Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-19T11:20:45.941Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/naxy-brands/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/naxy-brands/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4001                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4001/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-07-19T11:21:49.025Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:21:50.033Z] Validating nodejs source
+[debug] [2022-07-19T11:21:57.086Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-19T11:21:57.087Z] Building nodejs source
+[debug] [2022-07-19T11:21:57.087Z] Analyzing nodejs backend spec
+[debug] [2022-07-19T11:21:57.088Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-19T11:21:57.108Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:21:57.612Z] Serving at port 9005
+
+[debug] [2022-07-19T11:21:57.814Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-19T11:21:57.825Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-19T11:21:58.111Z] Validating nodejs source
+[debug] [2022-07-19T11:22:03.519Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-19T11:22:03.519Z] Building nodejs source
+[debug] [2022-07-19T11:22:03.520Z] Analyzing nodejs backend spec
+[debug] [2022-07-19T11:22:03.520Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-19T11:22:03.534Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:22:04.124Z] Serving at port 9005
+
+[debug] [2022-07-19T11:22:04.339Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:22:04.405Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-19T11:22:04.426Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-19T11:22:05.355Z] Validating nodejs source
+[debug] [2022-07-19T11:22:11.275Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-19T11:22:11.275Z] Building nodejs source
+[debug] [2022-07-19T11:22:11.275Z] Analyzing nodejs backend spec
+[debug] [2022-07-19T11:22:11.276Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-19T11:22:11.296Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:22:11.858Z] Serving at port 9005
+
+[debug] [2022-07-19T11:22:12.199Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:22:12.231Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-19T11:22:12.249Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-19T11:22:13.206Z] Validating nodejs source
+[debug] [2022-07-19T11:22:20.336Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-19T11:22:20.336Z] Building nodejs source
+[debug] [2022-07-19T11:22:20.336Z] Analyzing nodejs backend spec
+[debug] [2022-07-19T11:22:20.337Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-19T11:22:20.362Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:22:20.966Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:22:20.995Z] Serving at port 9005
+
+[debug] [2022-07-19T11:22:21.308Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-19T11:22:21.325Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-19T11:22:21.977Z] Validating nodejs source
+[debug] [2022-07-19T11:22:26.803Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-19T11:22:26.804Z] Building nodejs source
+[debug] [2022-07-19T11:22:26.804Z] Analyzing nodejs backend spec
+[debug] [2022-07-19T11:22:26.805Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-19T11:22:26.832Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:22:27.858Z] Validating nodejs source
+[debug] [2022-07-19T11:22:43.694Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-19T11:22:43.694Z] Building nodejs source
+[debug] [2022-07-19T11:22:43.694Z] Analyzing nodejs backend spec
+[debug] [2022-07-19T11:22:43.697Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-19T11:22:43.709Z] Serving at port 9005
+
+[debug] [2022-07-19T11:22:43.723Z] File D:\reactsetup\naxy-brands\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\reactsetup\\naxy-brands\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-07-19T11:22:44.186Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-19T11:22:44.197Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-19T11:22:44.510Z] Serving at port 9007
+
+[debug] [2022-07-19T11:22:44.735Z] Validating nodejs source
+[debug] [2022-07-19T11:22:51.447Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-19T11:22:51.448Z] Building nodejs source
+[debug] [2022-07-19T11:22:51.448Z] Analyzing nodejs backend spec
+[debug] [2022-07-19T11:22:51.450Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-19T11:22:51.452Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-19T11:22:51.472Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-19T11:22:52.086Z] Serving at port 9005
+
+[debug] [2022-07-19T11:22:52.362Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-19T11:22:52.378Z] shutdown requested via /__/quitquitquit
+
